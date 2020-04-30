@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+    <!-- defer faz o javascript ser carregado no final -->
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div id="content">
+        <aside>
+
+            <h1>SNAKE GAME!</h1>
+            <div>
+                <div>
+                    Score: <span id="spanScore">0</span>
+                </div>
+                <button id="btnScore"></button>
+            </div>
+            <div>
+                <div>
+                    Level: <span id="spanLevel">1</span>
+                </div>
+                <button id="btnLevel"></button>
+            </div>
+            <div>
+                <div>
+                    Border: <span id="spanBorder">No</span>
+                </div>
+                <button id="btnBorder"></button>
+            </div>
+        </aside>
+        <div id="jogo">
+            <canvas id="snake" width="448" height="448"></canvas>
+            <div id="gameover" class="blink" style="display:none;">
+                GAME OVER!<br />
+                <span>Click on Score Button to restart</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
